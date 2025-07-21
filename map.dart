@@ -23,4 +23,10 @@ void main() {
   student.forEach((key, value) {
     print('$key : $value');
   });
+
+  // prints all keys and values
+  student.forEach((key, value) {
+    var keys = key[0].toUpperCase() + key.substring(1);
+    print('$keys \t: $value');
+  });
 }
